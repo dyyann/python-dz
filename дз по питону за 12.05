@@ -1,0 +1,16 @@
+def palindrome(s):
+    return s[::-1] == s
+
+while True:
+    s = input("Enter a palindrome: ")
+    print(f"{s} is palindrome!" if palindrome(s) else "not a palindrome")
+    break
+
+a = str(input('введите поговорку'))
+b = str(input('введите слово, которое надо заменить'))
+d = b.upper()
+c = a.replace(f'{b}' ,  f'{d}')
+print(c)
+
+a = str(input("введите текст"))
+print(f'всего {a.count('.')} предложений')
