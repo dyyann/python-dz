@@ -1,0 +1,23 @@
+a = int(input('введите число'))
+b = int(input('Введите второе число'))
+c = int(input('Введите третье число'))
+print(a+b+c)
+
+a = int(input('введите свою зарплату'))
+b = int(input('Введите ваш платеж по кредиту'))
+c = int(input('Введите ваш долг за коммуналку'))
+print(f'У вас осталось {a-b-c}')
+
+a = int(input('введите длину первой диагонали'))
+b = int(input('Введите длину второй диагонали'))
+
+print(f'Площадь ромба равна: {a*b/2}')
+
+
+print('To be')
+print('or not')
+print('to be')
+
+
+
+print('“Life is what happens \n       when \n             you’re busy making other plans” \n                   John Lennon')
