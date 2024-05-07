@@ -1,0 +1,45 @@
+a = int(input('Введите число1: '))
+b = int(input('Введите число2: '))
+i = 0
+e = 0
+k = 0
+j = 0
+count1=0
+count3=0
+count2=0
+for i in range(a, b+1):
+    if (i % 2 == 0):
+        e += i
+        count1 += 1
+
+    elif (i % 2 != 0):
+        k += i
+        count2 += 1
+    if (i % 9 == 0):
+        j += i
+        count3 += 1
+
+print(count1)
+
+
+
+print(f' {e} , {k} , {j} , {e/count1}, {k/count2}, {j/count3}')
+
+a = int(input('Введите длину: '))
+b = str(input('Введите символ: '))
+i = 0
+while i < a:
+    i  += 1
+    print(b)
+
+a = int(input('Введите число: '))
+
+i = 0
+if 0 < a  and a !=7 :
+    print('Number is positive')
+elif a < 0:
+    print('Number is negative')
+elif a == 0:
+    print('Number is equal to zero')
+if a == 7:
+    print('Good bye!')
