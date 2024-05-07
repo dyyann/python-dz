@@ -1,0 +1,31 @@
+s = str(input("введите пример:"))
+if '+' in s:
+    a, b = s.split('+')
+    print(int(a) + int(b))
+if '-' in s:
+    a, b = s.split('-')
+    print(int(a) - int(b))
+if '*' in s:
+    a, b = s.split('*')
+    print(int(a) * int(b))
+if '/' in s:
+    a, b = s.split('/')
+    print(int(a) / int(b))
+
+ass = [23, 64, 867, 34, -63, -67, 30, 104, 380]
+pos_count, neg_count = 0, 0
+num = 0
+
+
+while (num < len(ass)):
+
+
+    if ass[num] >= 0:
+        pos_count += 1
+    else:
+        neg_count += 1
+    if 
+    num += 1
+
+print("Positive numbers in the list: ", pos_count)
+print("Negative numbers in the list: ", neg_count)
