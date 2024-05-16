@@ -1,0 +1,62 @@
+def text():
+    a = "“Dont compare yourself with anyone in this world…\n if you do so, you are insulting yourself.”"
+    b = "Bill Gates"
+    return f"{a}\n {b:>30}"
+
+
+res = text()
+print(res)
+
+def text(a, b):
+
+    l = [i for i in range(a, b+1) if i%2==0 ]
+    print(*l)
+
+a = int(input('введите число:'))
+b = int(input('введите число:'))
+text(a,b)
+
+def square(symbol, length, void):
+    print(symbol*length)
+    for i in range(length-1):
+        if void:
+            middle = ""*(length-2)
+        else:
+            middle = symbol*(length-2)
+        print(f'{symbol}{middle}{symbol}')
+    print(symbol*length)
+square('+', 5, True)
+
+def nums():
+    numbers = [3, 5, 7, 34, 67, 12, 546, 765]
+    return min(numbers)
+r = nums()
+print(r)
+
+def proizv(A, B):
+    if A == B:
+        return "Диапазон введен неверно."
+    if A > B:
+        A, B = B, A
+    res = 1
+    for i in range(A, B + 1):
+        res *= i
+    return res
+print(proizv(int(input("Введите A: ")), int(input("Введите B: "))))
+
+def dlina():
+    a = str(input('введите число '))
+    return len(a)
+r = dlina()
+
+print(r)
+
+def palindrom():
+    number = input("Введите число: ")
+    if number == number[::-1]:
+     return True
+    else:
+     return False
+r = palindrom()
+
+print(r)
